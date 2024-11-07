@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+<listeners>
+<listner class-name="ultilites.Extent"/>
+</listeners>
+  <test thread-count="5" name="Test">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="Chrome"/>
+
+    <classes>
+      <class name="testCases.AccountRegistrationTC"/>
+      <class name="testCases.LoginTC"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+	

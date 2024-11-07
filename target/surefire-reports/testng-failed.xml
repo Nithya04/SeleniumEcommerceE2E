@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.LoginTC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateLogin_Singleton"/>
+          <include name="setUp"/>
+          <include name="validate_login"/>
+        </methods>
+      </class> <!-- testCases.LoginTC -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
